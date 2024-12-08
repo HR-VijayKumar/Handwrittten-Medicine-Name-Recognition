@@ -44,7 +44,7 @@ This project implements a deep learning-based solution to recognize medicine nam
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/handwritten-medicine-recognition.git
+   https://github.com/HR-VijayKumar/Handwrittten-Medicine-Name-Recognition.git
    cd handwritten-medicine-recognition
    ```
 
