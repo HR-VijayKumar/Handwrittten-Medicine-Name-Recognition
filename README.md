@@ -69,7 +69,7 @@ This project implements a deep learning-based solution to recognize medicine nam
 
 - A Convolutional Neural Network (CNN) was trained to classify images into medicine names.
 - Preprocessing steps included resizing and normalization.
-- Achieved an accuracy of \~70%.
+- Achieved an accuracy of \~74%.
 
 ## Challenges and Solutions
 
