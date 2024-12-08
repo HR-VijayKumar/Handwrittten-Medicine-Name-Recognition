@@ -45,16 +45,8 @@ This project implements a deep learning-based solution to recognize medicine nam
 
    ```bash
    https://github.com/HR-VijayKumar/Handwrittten-Medicine-Name-Recognition.git
-   cd handwritten-medicine-recognition
+   cd Handwrittten-Medicine-Name-Recognition
    ```
-
-2. Install required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. (Optional) Ensure Tesseract OCR is installed if required for additional functionality.
 
 ## Usage
 
