@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Recognition</title>
+</head>
+<body>
+    <h1>Prescription Medicine Recognition</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Upload Image</button>
+    </form>
+
+    {% if predicted_medicine_name %}
+        <h2>Predicted Medicine Name: {{ predicted_medicine_name }}</h2>
+        <img src="{{ image_path }}" alt="Uploaded Image" style="max-width: 300px;">
+        {% if medicine_info %}
+            <h3>Medicine Information:</h3>
+            <ul>
+                <li><strong>Alternate name:</strong> {{ medicine_info['Alternate name'] }}</li>
+                <li><strong>Use:</strong> {{ medicine_info['Use'] }}</li>
+                <li><strong>Dosage:</strong> {{ medicine_info['Dosage'] }}</li>
+                <li><strong>Side Effects:</strong> {{ medicine_info['Side Effects'] }}</li>
+                <li><strong>Contraindications:</strong> {{ medicine_info['Contraindications'] }}</li>
+                <li><strong>Instructions:</strong> {{ medicine_info['Instructions'] }}</li>
+                <li><strong>Storage Condition:</strong> {{ medicine_info['Storage Condition'] }}</li>
+                <li><strong>Formulation:</strong> {{ medicine_info['Formulation'] }}</li>
+                <li><strong>Precautions:</strong> {{ medicine_info['Precautions'] }}</li>
+            </ul>
+        {% else %}
+            <p>No information available for this medicine.</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
