@@ -73,9 +73,7 @@ This project implements a deep learning-based solution to recognize medicine nam
 
 ## Challenges and Solutions
 
-1. **Handwriting Variability**:
-   - Addressed using data augmentation.
-2. **Overfitting**:
+1. **Overfitting**:
    - Reduced with dropout layers and regularization.
 
 ## Future Work
